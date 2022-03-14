@@ -1,7 +1,5 @@
-from flask import Flask
+from app import manager
 
-app = Flask(__name__)
+if __name__ == '__main__':
+	manager.run()
 
-@app.route('/')
-def home():
-    return "<h1>Hello World !</h1>"
