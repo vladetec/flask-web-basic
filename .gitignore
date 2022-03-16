@@ -110,6 +110,12 @@ ENV/
 env.bak/
 venv.bak/
 
+# Data Base DB
+.db
+.Banco.db
+Banco.db/
+
+
 # Spyder project settings
 .spyderproject
 .spyproject
