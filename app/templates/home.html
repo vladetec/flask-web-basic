@@ -10,7 +10,7 @@
 	<meta http-equiv='cache-control' content='no-cache'>
 	<meta http-equiv='expires' content='0'>
 	<meta http-equiv='pragma' content='no-cache'>
-	<title>Tela-Boas-Vindas </title>
+	<title>Listagem</title>
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.4.1/jspdf.debug.js" 
 	integrity="sha384-THVO/sM0mFD9h7dfSndI6TS0PgAGavwKvB5hAxRRvc0o9cPLohB0wb/PTA7LdUHs" 
@@ -31,6 +31,14 @@
 		</ul>
 	</nav>
 	<br>
-	<h1>Sejam Bem Vindos </h1>
+	<h1>LISTAGEM</h1>
+	<p>Ordem: {{ordem}}</p>
+	<ul>
+		{% for pessoa in pessoas %}
+			<li>ID: {{pessoa.id}} - NOME: {{pessoa.nome}} -IDADE: {{pessoa.idade}} -SEXO: {{pessoa.sexo}} -Salario: {{pessoa.salario}}</li>
+
+		{% endfor %}
+	</ul>
+	
 </body>
 </html>
