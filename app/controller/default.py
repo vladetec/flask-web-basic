@@ -3,6 +3,10 @@ from app import app, db
 from app.model.entities import Pessoa
 
 @app.route('/')
+@app.route('/index')
+def home():
+	return render_template('index.html')
+
 @app.route('/listagem')
 def listagem():
 	lista_pessoas = [
